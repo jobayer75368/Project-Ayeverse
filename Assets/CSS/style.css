@@ -8,7 +8,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 1rem 6rem;
 }
 
 :root {
@@ -19,7 +19,7 @@
     --primary-text-color: #090F32;
     --secondary-text-color: #FFFFFF;
     --color-bg: #ffffff;
-    --heading-font-size: 3rem;
+    --heading-font-size: 3.5rem;
 }
 
 body {
@@ -37,49 +37,70 @@ h2 {
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 12px 18px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 2rem;
+    transition: background-color .3s ease;
 
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
 }
 
 a {
     text-decoration: none;
     color: #090F32;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 /* Initial setup end  */
 
 /* hero section start */
 
-#hero_section {
-    height: 100vh;
+#hero {
+    min-height: 100vh;
     width: 100%;
     background: url(../images/hero-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* header part start  */
-header {
+.navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.navbar {
+.menu {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.navbar ul {
+.menu ul {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-.navbar i {
+.menu ul li a {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.menu ul li a>i {
+    display: flex;
+    justify-content: center;
+}
+
+.menu>i {
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
     padding: 8px 23px 8px 8px;
@@ -92,12 +113,33 @@ header {
 /* hero content part start  */
 .hero_content {
     display: flex;
-    justify-content: space-around;
+    gap: 3rem;
+    justify-content: space-between;
     align-items: center;
 }
 
-.hero_text p {
+.hero_text {
+    display: flex;
+    align-items: center;
+    /* width: 40%; */
+}
+
+.hero_text_part p {
     color: var(--primary-color);
+    font-size: 1.3rem;
+    font-family: var(--secondary-font-family);
+    margin-bottom: .5rem;
+}
+
+.hero_text_part h1 {
+    font-size: var(--heading-font-size);
+    display: flex;
+}
+
+.hero_image img {
+    max-width: 500px;
+    height: auto;
+    align-items: center;
 }
 
 /* hero section end  */
