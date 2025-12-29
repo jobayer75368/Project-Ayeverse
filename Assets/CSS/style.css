@@ -8,7 +8,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 
 :root {
@@ -19,8 +19,8 @@
     --secondary-font-family: "Plus Jakarta Sans", sans-serif;
     --primary-text-color: #090F32;
     --secondary-text-color: #FFFFFF;
-    --color-bg: #ffffff;
-    --heading-font-size: 3.5rem;
+    --color-bg: #E5E5E5;
+    --heading-font-size: 3.4rem;
 }
 
 body {
@@ -30,7 +30,6 @@ body {
 }
 
 h2 {
-    /* font-family: var(--secondary-font-family); */
     font-size: var(--heading-font-size);
 }
 
@@ -54,6 +53,11 @@ a {
     color: #090F32;
     font-size: 1rem;
     transition: color 0.3s ease;
+}
+
+.section_head {
+    color: #5A76FF;
+    text-transform: uppercase;
 }
 
 /* Initial setup end  */
@@ -116,7 +120,7 @@ a {
 /* hero content part start  */
 .hero_content {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -136,7 +140,7 @@ a {
 
 .hero_text_part h1 {
     font-family: var(--primary-font-family);
-    font-size: var(--heading-font-size);
+    font-size: 3.8rem;
     color: var(--primary-text-color);
 }
 
@@ -159,10 +163,7 @@ a {
     align-items: center;
 }
 
-#service .top_text p {
-    color: #5A76FF;
-    text-transform: uppercase;
-}
+#service .top_text p {}
 
 .arrow_icons .arrow {
     margin-left: 1.2rem;
@@ -216,4 +217,47 @@ a {
 
 .card a {
     font-size: small;
+}
+
+/* service section end  */
+
+/* project section start  */
+#project .head {
+    text-align: center;
+}
+
+#project .nav ul {
+    width: 40%;
+    border-radius: 1.3rem;
+    padding: 0.6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    background-color: white;
+
+}
+
+#project .nav ul li {
+
+    border-radius: 1rem;
+    padding: 0.8rem 0.5rem;
+}
+
+#project .nav ul li:hover,
+#project .nav ul li:focus {
+    background-color: #E5E5E5;
+}
+
+#project .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+#project .photos img {
+    width: 100%;
+    border-radius: 1rem;
 }
