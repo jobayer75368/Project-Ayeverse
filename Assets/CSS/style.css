@@ -489,3 +489,144 @@ h3 {
 .fourth>span {
     width: 85%;
 }
+
+/* Skill section end  */
+
+/* testimonial section start  */
+#testimonial {
+    height: 100vh;
+    width: 100%;
+}
+
+#testimonial .bg_div {
+    background-image: url("../images/testimonial-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 66%;
+    z-index: 0;
+}
+
+#testimonial .bg_div .testimonial_head {
+    color: var(--secondary-text-color);
+    height: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#testimonial .bg_div .testimonial_head p {
+    text-transform: uppercase;
+}
+
+.testimonial_image {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    height: 110%;
+    position: relative;
+    z-index: 1;
+    font-family: var(--secondary-font-family);
+}
+
+#testimonial .rectangle {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#testimonial .rectangle img {
+    width: 100%;
+    height: 100%
+}
+
+#testimonial .reviewArrow_div {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    margin-left: -10%;
+}
+
+#testimonial .reviewArrow_div .arrow_div {
+    text-align: right;
+}
+
+.reviewArrow_div .arrow_btn {
+    margin-left: 1.2rem;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 1rem;
+    display: inline;
+    cursor: pointer;
+}
+
+.reviewArrow_div .arrow_btn:focus {
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+    border: none;
+}
+
+#testimonial .review_div {
+    background-color: white;
+    height: 70%;
+
+    margin-top: 5%;
+
+    position: relative;
+    z-index: 5;
+    border-radius: 1rem;
+    padding: 2rem 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.review_div .comment {
+    line-height: 1.5rem;
+}
+
+.reviewer_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+}
+
+.comment_sign i {
+    font-size: 50px;
+    background: transparent;
+    /* background-color: #FFFFFF; */
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px var(--primary-color);
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewer {
+    display: flex;
+    gap: 1rem;
+}
+
+.reviewer_profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reviewer_profile p {
+    font-size: small;
+}
+
+.star i {
+    color: var(--primary-color);
+}
