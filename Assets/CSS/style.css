@@ -9,6 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+
 }
 
 :root {
@@ -50,14 +51,24 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #090F32;
+    font-family: var(--secondary-font-family);
     font-size: 1rem;
+    color: var(--primary-text-color);
     transition: color 0.3s ease;
+}
+
+h4 {
+    font-family: var(--secondary-font-family);
 }
 
 .section_head {
     color: #5A76FF;
     text-transform: uppercase;
+}
+
+p {
+
+    font-family: var(--secondary-font-family);
 }
 
 /* Initial setup end  */
@@ -415,14 +426,12 @@ h3 {
     justify-content: center;
 }
 
-/* 1st and 2nd progress_bar images */
 .progress>.progress_bar:nth-of-type(1) img,
 .progress>.progress_bar:nth-of-type(2) img {
     width: 3rem;
     height: auto;
 }
 
-/* 3rd and 4th progress_bar images */
 .progress>.progress_bar:nth-of-type(3) img,
 .progress>.progress_bar:nth-of-type(4) img {
     width: 2.2rem;
@@ -602,7 +611,6 @@ h3 {
 .comment_sign i {
     font-size: 50px;
     background: transparent;
-    /* background-color: #FFFFFF; */
     color: #FFFFFF;
     -webkit-text-stroke: 1px var(--primary-color);
 }
@@ -629,4 +637,98 @@ h3 {
 
 .star i {
     color: var(--primary-color);
+}
+
+/* testimonial section end  */
+
+/* footer section start  */
+footer {
+    margin-top: 8rem;
+    padding: 5rem 0;
+    background: url(../images/footer-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_main {
+    background-color: var(--secondary-text-color);
+    border-radius: 1rem;
+}
+
+.footer_top {
+    padding: 3rem 0rem;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quick_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.newsLetter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    height: 40px;
+    border-radius: 0.8rem;
+}
+
+form .email {
+    padding: 5px;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+form .email:focus {
+    outline: 1px solid rgb(101, 101, 255);
+
+}
+
+form button {
+    height: 100%;
+    width: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0 0.8rem 0.8rem 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer_bottom {
+    padding: 1.5rem 4.5rem;
+    border-top: 1px solid rgb(164, 164, 164);
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_bottom .links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+footer p,
+footer a {
+    color: #4F4F4F;
 }
