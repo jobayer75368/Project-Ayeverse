@@ -1206,3 +1206,22 @@ footer a:hover {
 #service_grid .container .grid_element a:hover {
     color: var(--primary-color);
 }
+
+/* service page ends  */
+
+
+/* project page start  */
+#project_grid {
+    margin-top: 5rem;
+}
+
+#project_grid .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#project_grid .photos img {
+    border-radius: 1rem;
+    width: 100%;
+}
