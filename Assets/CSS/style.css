@@ -1091,17 +1091,17 @@ footer a:hover {
 /* subscribe secton end  */
 
 /* footer section for about page start  */
-#about_footer {
+#page_footer {
     height: 100vh;
     width: 100%;
     margin-top: 4rem;
 }
 
-#about_footer .about_footer_top {
+#page_footer .page_footer_top {
     height: 21%;
 }
 
-#about_footer .about_footer_bottom {
+#page_footer .page_footer_bottom {
     height: 79%;
     background-image: url(../images/footer-bg-2.png);
     background-position: center;
@@ -1109,17 +1109,17 @@ footer a:hover {
     background-size: cover;
 }
 
-#about_footer .footer_main {
+#page_footer .footer_main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-#about_footer .footer_emptyDiv {
+#page_footer .footer_emptyDiv {
     height: 80px;
 }
 
-#about_footer .footer_main_top {
+#page_footer .footer_main_top {
     display: flex;
     justify-content: space-between;
 }
@@ -1155,7 +1155,7 @@ footer a:hover {
 }
 
 
-#about_footer .footer_main_bottom {
+#page_footer .footer_main_bottom {
     padding: 1.5rem;
     border-top: 1px solid rgb(164, 164, 164);
     height: 10%;
@@ -1169,7 +1169,7 @@ footer a:hover {
     gap: 2rem;
 }
 
-/* about_footer ends */
+/* page_footer ends */
 /* about_section ends here  */
 
 /* service section start  */
