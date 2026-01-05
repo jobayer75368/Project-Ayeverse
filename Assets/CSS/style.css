@@ -960,7 +960,7 @@ footer a:hover {
 
 /* about page start here  */
 
-#about_header {
+#page_header {
     height: 50vh;
     width: 100%;
     background: url(../images/about-bg.png);
@@ -969,17 +969,17 @@ footer a:hover {
     background-size: cover;
 }
 
-#about_header .about_text {
+#page_header .about_text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-#about_header .about_text h2 {
+#page_header .about_text h2 {
     font-size: 2.8rem;
 }
 
-#about_header .about_text p i {
+#page_header .about_text p i {
     color: var(--primary-color);
 }
 
@@ -1427,3 +1427,114 @@ aside .tags>div a {
 }
 
 /* pagination end  */
+
+/* blog page end  */
+
+
+/* contact page start  */
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+#contact .contact_head {
+    text-align: center;
+}
+
+#contact .contact_head p {
+    color: var(--secondary-color);
+}
+
+#contact .contact_info {
+    background-color: var(--tertiary-color);
+    display: flex;
+    padding: 2rem;
+    /* justify-content: space-between; */
+    gap: 6rem;
+    border-radius: 1rem;
+}
+
+/* contact text start  */
+#contact .contact_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+#contact .contact_text>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact .contact_text>div>i {
+    background-color: #ffffff;
+    color: var(--secondary-color);
+    padding: .7rem 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact .contact_text>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+#contact .contact_text p {
+    color: rgb(104, 101, 101);
+}
+
+/* contact text end  */
+
+/* contact form  */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_form input,
+.contact_form a {
+    border-radius: .3rem;
+    padding: .8rem 1rem;
+    border: none;
+    font-family: var(--secondary-font-family);
+    background-color: #ffffff;
+}
+
+.contact_form input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.contact_form>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact_form .submit {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact_form .submit:hover {
+    background-color: rgb(63, 83, 255);
+}
+
+#contact .location iframe {
+    width: 100%;
+}
+
+/* contact form end  */
+/* contact page end  */
