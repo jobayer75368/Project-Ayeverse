@@ -1225,3 +1225,144 @@ footer a:hover {
     border-radius: 1rem;
     width: 100%;
 }
+
+/* project page end  */
+
+/* blog page start  */
+#blog {
+    margin-top: 5rem;
+}
+
+#blog .container {
+    font-family: var(--primary-font-family);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#blog .blog_main {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+#blog .blog_main .blog_content {
+    padding: 1.5rem;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0.5rem;
+}
+
+.blog_content .blog_img {
+    background-color: rgb(189, 189, 189);
+    height: 18rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start
+}
+
+.blog_img .admin {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 0rem 0.6rem;
+    padding: .3rem;
+    display: flex;
+    gap: .5rem;
+
+}
+
+.blog_content .blog_text {
+    margin-top: 2rem;
+}
+
+.blog_content .blog_text .blog_date {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.blog_content .blog_text .text_p {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-family: var(--secondary-font-family);
+}
+
+.blog_content .blog_text a {
+    margin-top: 2rem;
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+}
+
+#blog aside {
+    width: 32%;
+}
+
+aside .search {
+    padding: 2rem;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0.5rem;
+}
+
+aside .search h3 {
+    margin-bottom: 2rem;
+}
+
+aside .search form {
+    width: 100%;
+    display: flex;
+}
+
+aside .search input,
+aside .search button {
+    font-size: 1rem;
+    padding: .8rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--secondary-font-family);
+    background-color: var(--tertiary-color);
+    outline: none;
+}
+
+aside .search input {
+    width: 100%;
+
+}
+
+aside .search form input:focus {
+    outline: 2px solid #6982ff;
+}
+
+aside .search button {
+    color: var(--secondary-color);
+    margin-left: -2.9rem;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+/* pagination  */
+
+.pagination {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pagination a {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--tertiary-color);
+}
+
+.pagination a:hover,
+.pagination a.active_page {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
