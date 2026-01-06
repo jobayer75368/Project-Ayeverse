@@ -7,6 +7,7 @@
     <title>Ayeverse-About</title>
     <!-- CSS link  -->
     <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/responsive.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,8 +37,10 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars-staggered"></i>
             </div>
+            <button id="side_btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
         </nav>
         <div class="about container">
             <div class="about_text">
@@ -49,6 +52,42 @@
             </div>
         </div>
     </section>
+    <!-- mobile Slider nav menu start  -->
+    <div class="nav_menu">
+        <div class="logo">
+            <img src="./Assets/images/logo.png" alt="">
+            <button class="hide_btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul>
+            <hr>
+            <li><a href="index.html">Home </a></li>
+            <hr>
+            <li><a href="about.html">About Us </a></li>
+            <hr>
+            <li><a class="active" href="service.html">Services</a></li>
+            <hr>
+            <li><a href="project.html">Projects</a></li>
+            <hr>
+            <li><a href="blog.html">Blog</a></li>
+            <hr>
+            <li><a href="contact.html">Contact</a></li>
+            <hr>
+        </ul>
+        <p><i class="fa-solid fa-envelope"></i>info@nebulaitbd.com
+        </p>
+        <p></i><i class="fa-solid fa-phone"></i>+880 1886 927829</p>
+        <div class="media_links">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+    <!-- mobile Slider nav menu end  -->
     <section id="service_grid">
         <div class="container">
             <div class="grid_element">
@@ -173,4 +212,8 @@
         </div>
     </footer>
     <!-- footer section end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Assets/JS/script.js"></script>
 </body>

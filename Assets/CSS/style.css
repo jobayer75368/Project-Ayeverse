@@ -30,7 +30,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.menu li .active {
+.active {
     color: var(--primary-color);
 }
 
@@ -117,7 +117,7 @@ p {
     color: var(--primary-color);
 }
 
-.navbar button {
+#side_btn {
     display: none;
     font-size: 1rem;
     background-color: var(--primary-color);

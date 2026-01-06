@@ -97,7 +97,7 @@
         display: none;
     }
 
-    .navbar button {
+    #side_btn {
         display: block;
     }
 
