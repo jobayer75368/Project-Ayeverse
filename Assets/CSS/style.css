@@ -206,18 +206,12 @@ p {
     width: 100%;
     height: 270px;
     background-color: var(--tertiary-color);
-    padding: 2rem 2.8rem 2rem 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 1.4rem;
-    transition: all .3s ease;
 
-}
-
-.first_card:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-text-color);
 }
 
 .first_card img {
@@ -239,7 +233,7 @@ p {
 
 #project .nav ul {
     width: 45%;
-    height: 60px;
+    /* height: 60px; */
     border-radius: 1.5rem;
     padding: 1rem;
     margin: 0 auto;
@@ -529,7 +523,7 @@ h3 {
 
 /* testimonial section start  */
 #testimonial {
-    height: 105vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -538,7 +532,7 @@ h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 66%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -613,9 +607,7 @@ h3 {
 #testimonial .review_div {
     background-color: white;
     height: 70%;
-
     margin-top: 5%;
-
     position: relative;
     z-index: 5;
     border-radius: 1rem;
