@@ -532,7 +532,7 @@ h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 70%;
     z-index: 0;
 }
 
@@ -662,6 +662,10 @@ h3 {
 /* testimonial section end  */
 
 /* story section start  */
+#story {
+    margin-top: 4rem
+}
+
 #story .story_head {
     text-align: center;
 }
@@ -849,7 +853,7 @@ h3 {
 
 /* footer section start  */
 #home_footer {
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding: 5rem 0;
     background: url(../images/footer-bg.jpeg);
     background-position: center;
@@ -952,10 +956,22 @@ footer a:hover {
 #page_header {
     height: 50vh;
     width: 100%;
-    background: url(../images/about-bg.png);
+    min-width: 250px;
+    background: #f3f7f8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#page_header .about {
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page_header .about img {
+    max-width: 220px;
 }
 
 #page_header .about_text {
@@ -1019,6 +1035,11 @@ footer a:hover {
     border-radius: .5rem;
 }
 
+.about_hero_text a:hover {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+}
+
 .about_hero_img {
     width: 50rem;
 }
@@ -1030,6 +1051,42 @@ footer a:hover {
 }
 
 /* about hero section ends  */
+
+
+
+/* footer section for about page start  */
+#page_footer {
+    height: 100vh;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+#page_footer .page_footer_top {
+    height: 21%;
+}
+
+#page_footer .page_footer_bottom {
+    height: 79%;
+    background-image: url(../images/footer-bg-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page_footer .footer_main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#page_footer .footer_emptyDiv {
+    height: 80px;
+}
+
+#page_footer .footer_main_top {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* subscribe section start  */
 .subscribe .container {
@@ -1078,41 +1135,6 @@ footer a:hover {
 }
 
 /* subscribe secton end  */
-
-/* footer section for about page start  */
-#page_footer {
-    height: 100vh;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-#page_footer .page_footer_top {
-    height: 21%;
-}
-
-#page_footer .page_footer_bottom {
-    height: 79%;
-    background-image: url(../images/footer-bg-2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#page_footer .footer_main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-#page_footer .footer_emptyDiv {
-    height: 80px;
-}
-
-#page_footer .footer_main_top {
-    display: flex;
-    justify-content: space-between;
-}
-
 .footer_main_top .footer_about {
     display: flex;
     flex-direction: column;
@@ -1446,7 +1468,6 @@ aside .tags>div a {
     background-color: var(--tertiary-color);
     display: flex;
     padding: 2rem;
-    /* justify-content: space-between; */
     gap: 6rem;
     border-radius: 1rem;
 }

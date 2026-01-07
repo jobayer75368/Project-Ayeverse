@@ -162,6 +162,10 @@
         gap: 1.5rem;
     }
 
+    #testimonial {
+        height: 1000px;
+    }
+
     #testimonial .bg_div .testimonial_head {
         height: 20%;
     }
@@ -192,7 +196,6 @@
     #testimonial .review_div {
         font-size: .9rem;
         margin-top: 2%;
-        background-color: green;
         padding: 1.5rem;
         width: 90%;
     }
@@ -208,8 +211,12 @@
         outline: 1px solid var(--primary-color);
     }
 
+    #story {
+        margin-top: -10rem;
+    }
+
     #story .container {
-        margin-top: 1rem;
+        margin-top: 0rem;
         padding: 1.5rem;
     }
 
@@ -264,5 +271,99 @@
         justify-content: space-between;
         gap: 1rem;
     }
+
+    /* about page start  */
+    #about_hero {
+        margin-top: 2rem;
+    }
+
+    #about_hero .container,
+    .about_hero_text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about_hero_img img {
+        max-width: 360px;
+    }
+
+    #page_footer {
+        margin-top: 0rem;
+    }
+
+    #page_footer .page_footer_top {
+        height: 19%;
+    }
+
+    .subscribe .container .sub_text {
+        width: 360px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .subscribe .sub_text h2 {
+        font-size: 1.8rem;
+    }
+
+    #page_footer .footer_main_top {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .footer_main_top .footer_about,
+    .footer_service,
+    .quick_links {
+        text-align: center;
+    }
+
+    #page_footer .page_footer_bottom {
+        height: 170%;
+    }
+
+    .footer_service div {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    #page_footer .footer_main_bottom {
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer_main_bottom .links {
+        gap: 1.5rem;
+    }
+
+    #service_grid .container,
+    #blog .container,
+    #project_grid .photos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blog .blog_main,
+    #blog aside {
+        width: 100%;
+    }
+
+    #contact .contact_info {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact_form {
+        gap: 1rem;
+    }
+
+    .contact_form>div {
+        flex-direction: column;
+    }
+
+
 
 }
