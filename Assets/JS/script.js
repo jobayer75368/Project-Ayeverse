@@ -1,15 +1,19 @@
 $(document).ready(function () {
     const sideBtn = $("#side_btn")
     const navMenu = $(".nav_menu")
+    const overLay = $("#overlay")
 
     sideBtn.click(function () {
         navMenu.toggleClass("side_menu");
+        overLay.css("display", "block");
+
     });
 
     const hideBtn = $(".hide_btn")
 
     hideBtn.click(function () {
         navMenu.toggleClass("side_menu");
+        overLay.css("display", "none");
     })
 
     $(".engineering_btn").click(function () {
